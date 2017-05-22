@@ -2,6 +2,7 @@
 
 from tkinter import *
 
+
 class Application(Frame):
 	def _init_(self,master=None):
 		Frame.__init__(self,master)
