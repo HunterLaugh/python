@@ -19,6 +19,5 @@ app=Application()
 
 # 设置窗口标题
 app.master.title('Hello World')
-ojniouihuipi-063/07
+
 app.mainloop()
-.+7p[;]=
