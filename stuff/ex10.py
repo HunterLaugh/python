@@ -1,4 +1,6 @@
 # coding: utf-8
+# 转义字符 \
+# \n 换行  \t tab键  \\ 斜线   
 
 tabby_cat="\tI'm tabbed in."
 persian_cat="I'm split \non a line."

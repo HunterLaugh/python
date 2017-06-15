@@ -1,5 +1,6 @@
 # coding:utf-8
-
+# %r  when argument  are 123 or True  will itself
+# %r  when argument  are string  will " " or ' '
 formatter="%r %r %r %r"
 
 print(formatter %(1,2,3,4))
