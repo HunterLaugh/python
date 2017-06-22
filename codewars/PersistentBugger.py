@@ -18,3 +18,7 @@ For example:
 
  persistence(4) # returns 0, because 4 is already a one-digit number
 """
+
+def persistence(n):
+	while n>10:
+		
