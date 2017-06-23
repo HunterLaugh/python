@@ -1,11 +1,11 @@
 def persistence(n):
 	count=0
-	while len(str(n))>1:
-		New=1
-		L=str(n)
+	while n>=10:
+		temp=1
+		L=list(str(n))
 		for x in L:
-			n=int(x)*New
-		count+=1
+			n=int(x)*temp
+		count=count+1
 	
 	return count
 	
