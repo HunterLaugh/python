@@ -21,11 +21,25 @@ For example:
 
 def persistence(n):
 	count=0
-	if n<0 or n>=10000:
-		print("Error, Please enter a number betwwen 0-9999")
-		return
 	while n>=10:
-		if n>=1000 :
+		if n>=100000 :
+			single=n%10
+			tens=n%100//10
+			hundreds=n%1000//100
+			thousands=n%10000//1000
+			millions=n%100000//10000
+			tenMillion=n//100000
+			n=single*tens*hundreds*thousands*millions*tenMillion
+			count=count+1            
+		elif n>=10000:
+			single=n%10
+			tens=n%100//10
+			hundreds=n%1000//100
+			thousands=n%10000//1000
+			millions=n//10000
+			n=single*tens*hundreds*thousands*millions
+			count=count+1
+		elif n>=1000 :
 			single=n%10
 			tens=n%100//10
 			hundreds=n%1000//100
@@ -35,12 +49,12 @@ def persistence(n):
 		elif n>=100:
 			single=n%10
 			tens=n%100//10
-			hundreds=n%1000//100
+			hundreds=n//100
 			n=single*tens*hundreds
 			count=count+1
 		elif n>=10:
 			single=n%10
-			tens=n%100//10
+			tens=n//10
 			n=single*tens
 			count=count+1
 	
