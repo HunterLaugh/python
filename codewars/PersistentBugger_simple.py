@@ -4,7 +4,8 @@ def persistence(n):
 		temp=1
 		L=list(str(n))
 		for x in L:
-			n=int(x)*temp
+			temp=int(x)*temp
+		n=temp
 		count=count+1
 	
 	return count
