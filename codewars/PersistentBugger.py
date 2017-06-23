@@ -20,5 +20,35 @@ For example:
 """
 
 def persistence(n):
-	while n>10:
+	count=0
+	if n<0 or n>=10000:
+		print("Error, Please enter a number betwwen 0-9999")
+		return
+	while n>=10:
+		if n>=1000 :
+			single=n%10
+			tens=n%100//10
+			hundreds=n%1000//100
+			thousands=n//1000
+			n=single*tens*hundreds*thousands
+			count=count+1
+		elif n>=100:
+			single=n%10
+			tens=n%100//10
+			hundreds=n%1000//100
+			n=single*tens*hundreds
+			count=count+1
+		elif n>=10:
+			single=n%10
+			tens=n%100//10
+			n=single*tens
+			count=count+1
+	
+	return count
 		
+print("persistence(39)",persistence(39))
+print("persistence(4)",persistence(4))
+print("persistence(25)",persistence(25))
+print("persistence(999)",persistence(999))
+print("persistence(8174)",persistence(8174))
+print("persistence(-21)",persistence(-21))			
