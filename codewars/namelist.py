@@ -39,7 +39,7 @@ def namelist(names):
 		index=0
 		for y in  listName:
 			if index==(n-2):
-				nam=names.get('name')+'&'+y
+				nam=y.get('name')+'&'+y
 			else:
 				nam=nam+','+y
 			index=index+1
@@ -48,3 +48,4 @@ def namelist(names):
 
 	
 print(namelist([ {'name': 'Bart'}, {'name': 'Lisa'}, {'name': 'Maggie'} ]))
+print(namelist([ {'name': 'Bart'} ]))
