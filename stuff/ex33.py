@@ -1,3 +1,5 @@
+#  use  loop   function  and  range  for  0-->n
+
 i=0
 numbers=[]
 
