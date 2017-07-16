@@ -20,23 +20,31 @@ to_weird_case('Weird string case') # => returns 'WeIrD StRiNg CaSe'
 
 def to_weird_case(string):
 	# your code
-#	st=string.split()
-#	for x in  st:
-		Li=list(string)
-		i=0
-		for y in Li:
-			if i%2==0:
-				Li[i]=y.upper()
-			else:
-				Li[i]=y.lower()
-			i+=1
+	n=len(string)
+	i=0
+	j=0
+	
+	Li=list(string)
+	
+	while i<n :
+		print("start",i,string[i])
+		if string[i]==" ":
+			j=0
+		elif j%2==0: # and string[j].islower():
+			Li[i]=string[i].upper()
+			j+=1
+			print("0 2 ")
+		elif j%2==1: # and string[i].isupper():
+			Li[i]=string[i].lower()
+			j+=1
+			print("1 3")
+		print("end",i,Li[i])
+
+		i+=1
+		
+	
+	
 			
-		Li=str(Li)
-		
-		x=Li
+	return Li
 
-		
-	return st
-
-# test
 print(to_weird_case("This"))
