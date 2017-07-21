@@ -129,7 +129,11 @@ None is None  #=> True
 # 除此以外的所有值都等于 True。
 0 == False  #=> True
 "" == False #=> True
- 
+
+#　添加 end="" 打印不换行
+print("acb",end="")  
+# 移除列表中第一个匹配项
+list.remove(obj)
  
 ####################################################
 ## 2. Variables and Collections
@@ -646,3 +650,21 @@ dir(math)
 # f=open("filename path",'r or w')
 # f.read()
 # f.write()
+
+# " ".join(a)   join function以" "中字符作为分隔符，连接 about
+a=['a','b','c']
+"".join(a) #==> 'abc'
+":".join(a) #==> "a:b:c"
+
+# map() 高阶函数，类似于excel中对同一列，全部+1，map()就是对[]做function同样操作
+map(function,[])   # function 函数，[] 序列 
+#  map()结果是Iterator惰性序列，需要使用list[]才会计算结果
+def f(x):
+	return x*x
+
+r=map(f,[1,2,3])  #对序列1,2,3 全部求其平方 
+print(list(r))   #使用list(r)  才会计算map()的结果
+
+# map(lambda,[]) 匿名函数
+map(lambda x: x **2,[1,2,3])   
+map(lambda x,y: x+y, [1,2],[3,4]) 
