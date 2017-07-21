@@ -24,12 +24,13 @@ def list_squared(m,n):
 	for x in range(m,n+1):
 		devisor=[]
 		k=1
-		while k*k<n:
-			if x%k==0:
-				devisor.append(k,x//k)
+		while k*k<=x:
+			if k*k==x:
+				devisor.append(k)
+			elif x%k==0:
+				devisor.append(k)
+				devisor.append(x//k)
 			k+=1
-		if k*k==x
-			devisor.append(k)
 	#		print("y",y)
 	#	print("x",x,"y",y,"devisor",devisor)
 			
@@ -43,5 +44,5 @@ def list_squared(m,n):
 		
 		
 print(list_squared(1,250))		
-print(list_squared(42,250))
-print(list_squared(250,500))		
+#print(list_squared(42,250))
+#print(list_squared(250,500))		
