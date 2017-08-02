@@ -1,0 +1,17 @@
+"""
+Permutations
+
+In this kata you have to create all permutations of an input string and remove duplicates, if present. This means, you have to shuffle all letters from the input in all possible orders.
+
+Examples:
+
+permutations('a'); # ['a']
+permutations('ab'); # ['ab', 'ba']
+permutations('aabb'); # ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']
+The order of the permutations doesn't matter.
+
+"""
+
+# coding:utf-8
+# 输入字符 输出字符所有的可能组合 
+# 去除重复 set()   排序  list.sort()
