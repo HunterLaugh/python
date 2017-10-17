@@ -651,7 +651,7 @@ dir(math)
 # f.read()
 # f.write()
 
-# " ".join(a)   join function以" "中字符作为分隔符，连接 about
+# " ".join(a)   join function以" "中字符作为分隔符，连接 about  @Hunter
 a=['a','b','c']
 "".join(a) #==> 'abc'
 ":".join(a) #==> "a:b:c"
